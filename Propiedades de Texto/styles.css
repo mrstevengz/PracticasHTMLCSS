@@ -1,0 +1,15 @@
+p {
+    color: rgb(162, 63, 255);
+    font-family:"Sans", "WingDings";
+    text-align: justify;
+    text-decoration: line-through;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: none;
+    word-wrap: break-word;
+    font-weight: 800;
+}
+
+h1{
+    text-align: center;
+}

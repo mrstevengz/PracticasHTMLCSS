@@ -1,0 +1,16 @@
+p {
+    color:blue
+}
+
+li{
+    color:red
+}
+
+.faltante { /*Se utiliza . para seleccionar una clase*/
+    color:rgb(168, 150, 150)
+}
+
+#ingrediente-secreto{ /*Se utiliza # para seleccionar un ID*/
+    color:green;
+    font-weight: bold;
+}

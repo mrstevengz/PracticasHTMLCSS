@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Sans";
+    src: url("Fira_Sans_Condensed/FiraSansCondensed-Medium.ttf") format("truetype");
+    font-weight: 400;
+    
+}
+
+@font-face {
+    font-family: "Sans";
+    src: url("Fira_Sans_Condensed/FiraSansCondensed-Bold.ttf") format("truetype");
+    font-weight: 900;
+    
+}
