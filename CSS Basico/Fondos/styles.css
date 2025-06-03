@@ -1,0 +1,11 @@
+body {
+    background-color: #0f0;
+}
+
+.box {
+    width: 500px;
+    height: 600px;
+    margin: 20px;
+    background: url("https://s.yimg.com/ny/api/res/1.2/fwvVXggHiMCOM3GlVnabcw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media.zenfs.com/es/animal_pol_tico_619/ed41eafbad9b28bc405171d34f34da98") top / cover fixed #6fa;
+}
+
