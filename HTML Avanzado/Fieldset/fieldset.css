@@ -6,26 +6,18 @@ body {
     
 }
 
-h2{
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 100;
-    font-size: 22px;
-    padding: 10px;
-}
+
 
 form {
     background-color: transparent;
-    padding: 20px 0;
+    padding: 10px 0;
     max-width: 600px;
     margin: auto;
     box-shadow: 0 0 55px #0009;
     border-radius: 5px;
 }
 
-.form_input {
-    padding: 6px 20px;
-}
+
 
 input, textarea, select {
     min-width: 100%;
@@ -38,23 +30,6 @@ input, textarea, select {
     border-radius: 5px;
 }
 
-option{
-    background-color: #222;
-    
-}
-textarea {
-    min-width: 100%;
-    min-height: 100px;
-    font-family: sans-serif;
-    resize: none;
-}
-
-label {
-    font-size: 0.88em;
-    line-height: 2;
-
-}
-
 fieldset{
     margin: 20px;
     border: 1px solid #6666;
@@ -64,4 +39,3 @@ fieldset{
 legend{
     padding: 0 5px;
 }
-
