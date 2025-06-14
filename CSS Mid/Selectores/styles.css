@@ -2,8 +2,30 @@ ul li {
     color: grey;
 }
 
+/*SELECTOR POR ATRIBUTO */
 img[src $= "png"] {
     width: 100%;
+}
+
+/*SELECTOR POR HIJO DIRECTO */
+li > em {
+    color: #09f;
+}
+
+/*SELECTRO ADYACENTE */
+
+h1 + p {
+    color: #f00;
+}
+
+/*SELECTOR DE HERMANOS GENERALES */
+
+h1 ~ p {
+    color: blue;
+}
+
+h1, p {
+    color: brown;
 }
 
 
