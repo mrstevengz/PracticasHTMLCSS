@@ -1,0 +1,9 @@
+ul li {
+    color: grey;
+}
+
+img[src $= "png"] {
+    width: 100%;
+}
+
+
