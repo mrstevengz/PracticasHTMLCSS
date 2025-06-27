@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.box {
+    width: 320px;
+    height: 320px;
+    background-color: #f00;
+    margin: auto;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;;
+    color: white;
+    position: relative;
+    left: 0;
+    overflow: clip;
+
+
+}
+
