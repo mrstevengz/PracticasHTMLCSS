@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRCET Y SIZES</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- EJEMPLO DE SRCSET NO FUNCIONAL, PERO FIJARSE EN LAS PROPIEDADES DE CADA IMAGEN. 1000W REPRESENTA 1000 DE WIDTH, PANTALLAS GRANDES, Y CONSIGUIENTE -->
+    <img src="https://i.pinimg.com/736x/35/6b/1b/356b1bc78eeff7086487226a2fa6f5e3.jpg" srcset="https://i.pinimg.com/736x/35/6b/1b/356b1bc78eeff7086487226a2fa6f5e3.jpg 1000w, https://i.pinimg.com/736x/35/6b/1b/356b1bc78eeff7086487226a2fa6f5e3.jpg 500w, https://i.pinimg.com/736x/35/6b/1b/356b1bc78eeff7086487226a2fa6f5e3.jpg 300w"
+    sizes="(max-width: 700px) 360px, 900px">
+    <!--    SI LA PANTALLA ES DE 700 PIXELES, USA UNA IMAGEN MAYOR A 360PX, SI ES MAYOR, UTILIZA UNA DE 900 -->
+</body>
+</html>
