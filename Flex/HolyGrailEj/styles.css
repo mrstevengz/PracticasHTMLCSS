@@ -27,6 +27,7 @@ p {
 
 .main-wrapper {
     max-width: 1024px;
+    flex-direction: column;
 }
 
 .header {
@@ -107,14 +108,14 @@ footer {
 }
 
 
-@media screen and (max-width:800px) {
-    aside:last-child {
-        display: none;
+@media screen and (min-width:480px) {
+    .main-wrapper {
+        flex-direction: row;
     }
 }
 
-@media screen and (max-width: 400px) {
-    .main-wrapper {
-        flex-direction: column;
+@media screen and (min-width: 800px) {
+    aside:last-child {
+        display: block;
     }
 }
