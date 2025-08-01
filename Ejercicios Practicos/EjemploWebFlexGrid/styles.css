@@ -21,11 +21,11 @@ body, div, ul, nav, header, footer, a, li, label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    container-type: inline-size;
-    container-name: header;
     font-size: 20px;
     position: relative;
     z-index: 10;
+    text-align: center;
+    color: #48e;
 }
 
 .header__open-nav-button {
@@ -42,7 +42,6 @@ body, div, ul, nav, header, footer, a, li, label {
 
 .header__nav {
     display: none;
-    background-color: #fff;
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -73,7 +72,7 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 .header__nav-item a {
-    color: #48e;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -83,7 +82,16 @@ body, div, ul, nav, header, footer, a, li, label {
 
 /*------HEADER QUERIES------- */
 
-@container header (min-width: 600px) {
+@media screen and (min-width: 600px) {
+
+    .header {
+        padding: 20px 0;
+        animation: header-movement both;
+        animation-timeline: scroll();
+        position: sticky;
+        top: 0;
+        animation-range: 10px 100px;
+    }
     .header__nav {
         display: block;
         position: static;
@@ -104,6 +112,8 @@ body, div, ul, nav, header, footer, a, li, label {
     }
 }
 
+
+
 /*-------HEADER ENDS---------*/
 
 /*PROFILE SECTION*/
@@ -112,6 +122,7 @@ body, div, ul, nav, header, footer, a, li, label {
     container-type: inline-size;
     container-name: profile;
     width: 100%;
+    animation: aparecer 2.4s -.8s both;
 }
 
 .profile__wrapper {
@@ -258,6 +269,7 @@ h1 {
     gap: 12px;
     padding: 12px;
     min-height: 80vh;
+
 }
 
 .portfolio__project {
@@ -266,6 +278,9 @@ h1 {
     background-size: cover;
     display: grid;
     place-content: center;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 48%;
 }
 
 .portfolio__project:hover {
@@ -316,6 +331,9 @@ h1 {
     padding: 40px 0;
     container-name: form;
     container-type: inline-size;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 10% contain 40%;
 }
 
 .form__form {
@@ -370,3 +388,28 @@ h1 {
         grid-area: message;
     }
 }
+
+/*----- ANIMACIONES------*/
+
+@keyframes header-movement {
+    from {
+        padding: 20px 0;
+        background-color: #fff;
+    }
+    to {
+        padding: 0px 0;
+        background-color: #0005;
+        color: #fff;
+        font-weight: bold;
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
