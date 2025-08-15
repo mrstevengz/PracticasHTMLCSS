@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body, div, ul, li, a, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --bg-color: color-mix(in srgb, #f62 70%, #fff);
+    --text-color: #333;
+    --dark-color: #f62;
+    --faq-color: #fff;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.faq {
+    max-width: clamp(300px, 70%, 700px);
+    margin: auto;
+}
+
+.faq details {
+    background-color: var(--faq-color);
+    margin: 7px;
+    padding: 7px;
+    
+}
+
+summary {
+    user-select: none;
+    position: relative;
+}
+
+summary::marker {
+    content: '';
+}
+
+summary::before {
+    content: '+';
+    color: var(--bg-color);
+    position: absolute;
+    right: 0;
+    font-weight: 700;
+}
+
+details[open] summary::before {
+    content: '-';
+}
+
+.content {
+    padding: 5px 10px;
+    margin: 10px;
+    margin-bottom: 0;
+    border-top: 1px solid var(--bg-color);
+    font-size: .9rem;
+    color: var(--text-color);
+}
+
+details b {
+    background-color: var(--bg-color);
+    color: #fff;
+    padding: 2px 4px;
+}
+
